@@ -2,11 +2,15 @@
     "memo_html": [
         {
             "title": "&lt;div&gt;を表示させる",
-            "body": "「<」は「&amp;lt;」、「>」は「&amp;gt;」に置き換えて入力する（less thanとgreater thanの略）<br>「&」も「&amp;amp」に置き換える必要があるため、上の文章は置き換えがそれぞれ2回ずつ発生している"
+            "body": "「<」は「<span class=\"accent_color\">&amp;lt;</span>」、「>」は「<span class=\"accent_color\">&amp;gt;</span>」に置き換えて入力する（less thanとgreater thanの略）<br>「&」も「&amp;amp」に置き換える必要があるため、上の文章は置き換えがそれぞれ2回ずつ発生している"
         },
         {
             "title": "スペルチェックを無効化する",
             "body": "&lt;input spellcheck=\"false\"&gt;"
+        },
+        {
+            "title": "外部リンクを新しいタブで開く時",
+            "body": "&lt;a href=\"https://youtu.be/mliE57khf_g\" target=\"_blank\" <span class=\"accent_color\">rel=\"noreferrer noopener\"</span>&gt; <br>これを追加することで悪意あるサイトから元のサイトが操作されることがなくなるらしい？ <br>たったこれだけの手間だから付けるだけ得"
         },
         {
             "title": "",
@@ -17,23 +21,27 @@
     "memo_css": [
         {
             "title": "SVGの色を変える",
-            "body": "background-color: #ff0000<br>background-image: linear-gradient()でグラデーションも可<br>mask-image: url(\"../images/gazou.svg\")<br>mask-position: center<br>mask-repeat: norepeat"
+            "body": "background-color: #ff0000<br>background-image: linear-gradient()でグラデーションも可 <br><span class=\"accent_color\">mask-image: url(\"../images/gazou.svg\")</span> <br>mask-position: center<br>mask-repeat: norepeat"
         },
         {
             "title": "linear-gradientの書き方",
-            "body": "background: linear-gradient(45deg, #ff0000 0%, #00ff00 50%, #0000ff 100%)<br>角度はdegで指定、色は%を使うと開始位置からの位置指定ができる"
+            "body": "background: linear-gradient(45deg, #ff0000 0%, #00ff00 50%, #0000ff 100%) <br>角度はdegで指定、色は%を使うと開始位置からの位置指定ができる"
         },
         {
             "title": "textareaの右下のボタンを消す",
-            "body": "resize: none<br>リサイズできないため文字が要素の範囲外に出ると隠れる　下のfield-sizingを併せて使うといい"
+            "body": "resize: none<br>リサイズできないため文字が要素の範囲外に出ると隠れる 下のfield-sizingを併せて使うといい"
         },
         {
             "title": "textareaをテキストの長さに合わせて伸縮させる",
-            "body": "field-sizing: content<br>min-widthを指定すれば初期はその長さ、max-widthを指定すればそれを超えた時に改行されて縦に伸びていく<br>heightを指定すると超えた時にtextareaがスクロール可能になる？（未検証）"
+            "body": "field-sizing: content <br>min-widthを指定すれば初期はその長さ、max-widthを指定すればそれを超えた時に改行されて縦に伸びていく <br>heightを指定すると超えた時にtextareaがスクロール可能になる？（未検証）"
         },
         {
             "title": "パンくずリストのスラッシュ",
-            "body": ":not:(:last-child)に対して::afterを使ってスラッシュをつけることでHTMLにスラッシュ要素を作ることなくスマートに表示できる"
+            "body": ":not:(:last-child)に対して::afterを使ってスラッシュをつけることで、HTMLにスラッシュのためだけの要素を作ることなくスマートに表示できる"
+        },
+        {
+            "title": "要素が画面いっぱいになった時だけ角丸を消す",
+            "body": "border-radius: calc(sign(<span class=\"accent_color\">100vw - 100%</span>) * <span class=\"secondary_color\">40px</span>) <br>signの中が正または負の場合はそれぞれ+1、-1を返し、0の場合は0を返す <br><span class=\"accent_color\">signの中</span>が1以上であれば常に左辺が1になるが、0になった時左辺が0になるため、<span class=\"secondary_color\">角の半径</span>が突然0になる"
         },
         {
             "title": "",
@@ -44,7 +52,11 @@
     "memo_js": [
         {
             "title": "datasetの取り出し方",
-            "body": "HTMLが &lt;div id=\"name\" data-food=\"bread\"&gt; の時<br>const item = document.querySelector(\"#name\")<br>item.dataset.foodの中身は\"bread\""
+            "body": "HTMLが &lt;div id=\"name\" data-<span class=\"accent_color\">food</span>=\"<span class=\"accent_color\">bread</span>\"&gt; の時 <br> <br>const item = document.querySelector(\"#name\") <br>item.dataset.<span class=\"accent_color\">food</span> == \"<span class=\"accent_color\">bread</span>\""
+        },
+        {
+            "title": "localStorage",
+            "body": "localStorage.setItem(\"キーの名前\", \"データ\") <br>localStorage.getItem(\"キーの名前\") <br> <br>それぞれダブルクォーテーション（\"）で囲む "
         },
         {
             "title": "",
@@ -54,8 +66,16 @@
 
     "memo_tool": [
         {
-            "title": "toolのメモ1",
-            "body": "toolのめもだよー1"
+            "title": "<a href=\"https://fonts.google.com/?lang=ja_Jpan\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">Google Fonts 日本語</a>",
+            "body": "Google Fontsを日本語に絞って表示"
+        },
+        {
+            "title": "<a href=\"https://fonts.google.com/icons\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">Google Fonts icons</a>",
+            "body": "Googleのアイコン"
+        },
+        {
+            "title": "<a href=\"https://colorpickerlab.com/theme-generator\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">Color Picker Lab</a>",
+            "body": "ウェブサイトで使う前提のカラーパレットをランダムで生成"
         },
         {
             "title": "",

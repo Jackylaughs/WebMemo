@@ -26,10 +26,24 @@ body {
     background-color: #F9F8F8;
     color: #665B5F;
     font-family: "MCode";
+    margin: 0 auto;
     padding: 16px;
+    width: 1200px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        width: 100%;
+    }
 }
 
 .site_title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.site_description {
     margin-bottom: 16px;
 }
 
@@ -81,22 +95,53 @@ body {
 }
 
 .memo_item {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .memo_title {
-    color: #9F566E;
+    /* color: #9F566E; */
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 8px;
+    padding-left: 12px;
+    position: relative;
+}
+
+.memo_title::before {
+    background-color: #9F566E;
+    border-radius: 20px;
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 6px;
 }
 
 .secondary_color {
-    color: #7A986C;
+    background-color: #7A986C;
+    border-radius: 4px;
+    color: #F9F8F8;
+    padding: 2px 4px;
 }
 
 .accent_color {
-    color: #4B67A0;
+    background-color: #4B67A0;
+    border-radius: 4px;
+    color: #F9F8F8;
+    padding: 2px 4px;
+}
+
+.outer_link {
+    color: inherit;
+    font-size: inherit;
+    font-weight: 800;
+    text-decoration: underline;
+    transition: color 0.15s;
+}
+
+.outer_link:hover {
+    color: #7A986C;
 }
 
 /* 隠す */
