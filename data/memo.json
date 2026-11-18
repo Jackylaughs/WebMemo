@@ -1,0 +1,65 @@
+{
+    "memo_html": [
+        {
+            "title": "&lt;div&gt;を表示させる",
+            "body": "「<」は「&amp;lt;」、「>」は「&amp;gt;」に置き換えて入力する（less thanとgreater thanの略）<br>「&」も「&amp;amp」に置き換える必要があるため、上の文章は置き換えがそれぞれ2回ずつ発生している"
+        },
+        {
+            "title": "スペルチェックを無効化する",
+            "body": "&lt;input spellcheck=\"false\"&gt;"
+        },
+        {
+            "title": "",
+            "body": ""
+        }
+    ],
+
+    "memo_css": [
+        {
+            "title": "SVGの色を変える",
+            "body": "background-color: #ff0000<br>background-image: linear-gradient()でグラデーションも可<br>mask-image: url(\"../images/gazou.svg\")<br>mask-position: center<br>mask-repeat: norepeat"
+        },
+        {
+            "title": "linear-gradientの書き方",
+            "body": "background: linear-gradient(45deg, #ff0000 0%, #00ff00 50%, #0000ff 100%)<br>角度はdegで指定、色は%を使うと開始位置からの位置指定ができる"
+        },
+        {
+            "title": "textareaの右下のボタンを消す",
+            "body": "resize: none<br>リサイズできないため文字が要素の範囲外に出ると隠れる　下のfield-sizingを併せて使うといい"
+        },
+        {
+            "title": "textareaをテキストの長さに合わせて伸縮させる",
+            "body": "field-sizing: content<br>min-widthを指定すれば初期はその長さ、max-widthを指定すればそれを超えた時に改行されて縦に伸びていく<br>heightを指定すると超えた時にtextareaがスクロール可能になる？（未検証）"
+        },
+        {
+            "title": "パンくずリストのスラッシュ",
+            "body": ":not:(:last-child)に対して::afterを使ってスラッシュをつけることでHTMLにスラッシュ要素を作ることなくスマートに表示できる"
+        },
+        {
+            "title": "",
+            "body": ""
+        }
+    ],
+
+    "memo_js": [
+        {
+            "title": "datasetの取り出し方",
+            "body": "HTMLが &lt;div id=\"name\" data-food=\"bread\"&gt; の時<br>const item = document.querySelector(\"#name\")<br>item.dataset.foodの中身は\"bread\""
+        },
+        {
+            "title": "",
+            "body": ""
+        }
+    ],
+
+    "memo_tool": [
+        {
+            "title": "toolのメモ1",
+            "body": "toolのめもだよー1"
+        },
+        {
+            "title": "",
+            "body": ""
+        }
+    ]
+}

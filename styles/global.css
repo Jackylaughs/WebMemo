@@ -26,9 +26,81 @@ body {
     background-color: #F9F8F8;
     color: #665B5F;
     font-family: "MCode";
+    padding: 16px;
 }
 
 .site_title {
-    padding: 16px;
     margin-bottom: 16px;
+}
+
+/* タブエリア */
+
+.category_container {
+    background-color: #e4e2e3;
+    border-radius: 8px 8px 0 0 ;
+    display: flex;
+    width: fit-content;
+}
+
+.category_button {
+    border-radius: 8px 8px 0 0;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 8px 16px;
+    transition: all 0.15s;
+    width: 180px;
+}
+
+.category_button:hover {
+    background-color: #dbd1d5;
+}
+
+.category_button:active {
+    filter: brightness(0.85);
+    transition: none;
+}
+
+.category_button.selected {
+    background-color: #9F566E;
+    color: #F9F8F8;
+}
+
+/* メモエリア */
+
+.memo_container {
+    border-top: 3px solid #9F566E;
+    padding: 24px 8px;
+}
+
+.memo_category {
+    display: none;
+}
+
+.memo_category.selected {
+    display: block;
+}
+
+.memo_item {
+    margin-bottom: 24px;
+}
+
+.memo_title {
+    color: #9F566E;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.secondary_color {
+    color: #7A986C;
+}
+
+.accent_color {
+    color: #4B67A0;
+}
+
+/* 隠す */
+
+.hidden {
+    display: none;
 }

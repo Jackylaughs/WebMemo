@@ -12,12 +12,20 @@
 
 <body>
     <h1 class="site_title">メモ一覧</h1>
-    <div class="category_button_container">
-        <button class="category_button">HTML</button>
-        <button class="category_button">CSS</button>
-        <button class="category_button">JavaScript</button>
-        <button class="category_button">外部ツール</button>
+
+    <div class="category_container">
+        <button class="category_button" data-category="memo_html">HTML</button>
+        <button class="category_button" data-category="memo_css">CSS</button>
+        <button class="category_button" data-category="memo_js">JavaScript</button>
+        <button class="category_button" data-category="memo_tool">外部ツール</button>
     </div>
-    <script src="app.js"></script>
+
+    <div class="memo_container">
+        <section class="memo_category" id="memo_html"></section>
+        <section class="memo_category" id="memo_css"></section>
+        <section class="memo_category" id="memo_js"></section>
+        <section class="memo_category" id="memo_tool"></section>
+    </div>
+    <script src="global.js"></script>
 </body>
 </html>
