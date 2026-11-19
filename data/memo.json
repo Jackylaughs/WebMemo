@@ -41,7 +41,7 @@
         },
         {
             "title": "要素が画面いっぱいになった時だけ角丸を消す",
-            "body": "border-radius: calc(sign(<span class=\"accent_color\">100vw - 100%</span>) * <span class=\"secondary_color\">40px</span>) <br>signの中が正または負の場合はそれぞれ+1、-1を返し、0の場合は0を返す <br><span class=\"accent_color\">signの中</span>が1以上であれば常に左辺が1になるが、0になった時左辺が0になるため、<span class=\"secondary_color\">角の半径</span>が突然0になる"
+            "body": "border-radius: calc(sign(<span class=\"accent_color\">100vw - 100%</span>) * <span class=\"secondary_color\">40px</span>) <br>signの中が正または負の場合はそれぞれ+1、-1を返し、0の場合は0を返す <br><span class=\"accent_color\">signの中</span>（画面の横幅 - 要素の横幅）が1以上であれば常に左辺が1になり、角の半径が<span class=\"secondary_color\">右辺</span>になる <br><span class=\"accent_color\">signの中</span>が0になった時左辺が0になるので角の半径が0になる"
         },
         {
             "title": "",
@@ -56,7 +56,7 @@
         },
         {
             "title": "localStorage",
-            "body": "localStorage.setItem(\"キーの名前\", \"データ\") <br>localStorage.getItem(\"キーの名前\") <br> <br>それぞれダブルクォーテーション（\"）で囲む "
+            "body": "localStorage.setItem(\"キーの名前\", \"データ\") <br>localStorage.getItem(\"キーの名前\") <br>それぞれダブルクォーテーション（\"）で囲む "
         },
         {
             "title": "",
