@@ -74,8 +74,8 @@
             "body": "Googleのアイコン"
         },
         {
-            "title": "<a href=\"https://colorpickerlab.com/theme-generator\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">Color Picker Lab</a>",
-            "body": "ウェブサイトで使う前提のカラーパレットをランダムで生成"
+            "title": "<a href=\"https://colorpickerlab.com/theme-generator\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">Color Picker Lab</a>(Color Theme Generator)",
+            "body": "ウェブサイトで使う前提のカラーパレットをランダムで生成 <br>他にもImage Color PickerやGradient Generatorなどのツールもある <br><a href=\"colorpallet.html\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">自分用カラーパレット置き場</a>"
         },
         {
             "title": "",
