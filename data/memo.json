@@ -44,8 +44,8 @@
             "body": "border-radius: calc(sign(<span class=\"accent_color\">100vw - 100%</span>) * <span class=\"secondary_color\">40px</span>) <br>signの中が正または負の場合はそれぞれ+1、-1を返し、0の場合は0を返す <br><span class=\"accent_color\">signの中</span>（画面の横幅 - 要素の横幅）が1以上であれば常に左辺が1になり、角の半径が<span class=\"secondary_color\">右辺</span>になる <br><span class=\"accent_color\">signの中</span>が0になった時左辺が0になるので角の半径が0になる"
         },
         {
-            "title": "",
-            "body": ""
+            "title": "指定しないとbuttonやtextareaにはフォントが継承されない",
+            "body": "input、selectなどのフォーム部品にはブラウザが勝手にフォントを指定する　気になる要素には <br>font-family: inherit <br>などで直接指定するといい"
         }
     ],
 
@@ -59,8 +59,8 @@
             "body": "localStorage.setItem(\"キーの名前\", \"データ\") <br>localStorage.getItem(\"キーの名前\") <br>それぞれダブルクォーテーション（\"）で囲む "
         },
         {
-            "title": "",
-            "body": ""
+            "title": "input、textareaなどの空要素の中に入力された文字を取得する",
+            "body": "中身がなくtextContentでは取得できないのでvalueを使う（閉じタグがないもの全部？） <br>if (!input.value) { <br>    console.log(\"入力欄は空です\")"
         }
     ],
 
@@ -75,7 +75,7 @@
         },
         {
             "title": "<a href=\"https://colorpickerlab.com/theme-generator\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">Color Picker Lab</a>(Color Theme Generator)",
-            "body": "ウェブサイトで使う前提のカラーパレットをランダムで生成 <br>他にもImage Color PickerやGradient Generatorなどのツールもある <br><a href=\"colorpallet.html\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">自分用カラーパレット置き場</a>"
+            "body": "ウェブサイトで使う前提のカラーパレットをランダムで生成 <br>他にもImage Color PickerやGradient Generatorなどのツールもある <br><a href=\"colorpallet.html\" target=\"_blank\" rel=\"noreferrer noopener\" class=\"outer_link\">自分用カラーパレット置き場</a>（作成中）"
         },
         {
             "title": "",
