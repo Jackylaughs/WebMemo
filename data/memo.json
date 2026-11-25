@@ -52,7 +52,7 @@
     "memo_js": [
         {
             "title": "datasetの取り出し方",
-            "body": "HTMLが &lt;div id=\"name\" data-<span class=\"accent_color\">food</span>=\"<span class=\"accent_color\">bread</span>\"&gt; の時 <br> <br>const item = document.querySelector(\"#name\") <br>item.dataset.<span class=\"accent_color\">food</span> == \"<span class=\"accent_color\">bread</span>\""
+            "body": "HTMLが &lt;div id=\"name\" data-<span class=\"accent_color\">food</span>=\"<span class=\"accent_color\">bread</span>\"&gt; の時 <br> <br>const item = document.querySelector(\"#name\") <br>item.dataset.<span class=\"accent_color\">food</span> === \"<span class=\"accent_color\">bread</span>\""
         },
         {
             "title": "localStorage",
@@ -61,6 +61,14 @@
         {
             "title": "input、textareaなどの空要素の中に入力された文字を取得する",
             "body": "中身がなくtextContentでは取得できないのでvalueを使う（閉じタグがないもの全部？） <br>if (!input.value) { <br>    console.log(\"入力欄は空です\")"
+        },
+        {
+            "title": "createElementで作った要素にいろいろ付与する",
+            "body": "item.classList.add(\"らーめん\") <br>item.id = \"つけめん\" <br>item.dataset.noodle = \"うどん\""
+        },
+        {
+            "title": "クリップボードを使う",
+            "body": "navigator.clipboard.<span class=\"accent_color\">writeText()</span> でテキストをクリップボードに書き込む <br>navigator.clipboard.<span class=\"accent_color\">readText()</span> でテキストを読み込む <br>非同期処理なのでawaitが必要"
         }
     ],
 
